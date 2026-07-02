@@ -34,3 +34,9 @@ function supprimerProduit(int $index, array &$products): array
 {
     return array_splice($products, $index, 1)[0];
 }
+
+function listerProduits(bool $archives = false): void
+{
+    global $products, $productsArchived;
+    afficherListeProduits($archives ? $productsArchived : $products);
+}
