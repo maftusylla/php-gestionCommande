@@ -1,12 +1,11 @@
 <?php
-// index.php - point d'entrée : ne fait qu'assembler et lancer
 
-require_once __DIR__ . '/model/product.model.php';
-require_once __DIR__ . '/model/client.model.php';
-require_once __DIR__ . '/model/commande.model.php';
+require_once __DIR__ . '/models/product.model.php';
+require_once __DIR__ . '/models/client.model.php';
+require_once __DIR__ . '/models/commande.model.php';
 
-require_once __DIR__ . '/controller/product.controller.php';
-require_once __DIR__ . '/controller/client.controller.php';
+require_once __DIR__ . '/controllers/product.controller.php';
+require_once __DIR__ . '/controllers/client.controller.php';
 
 saveProduct();
 archiverProduit();
